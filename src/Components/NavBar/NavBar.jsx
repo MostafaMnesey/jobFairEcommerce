@@ -33,7 +33,7 @@ export default function NavBar() {
             className={`text-2xl font-bold transition-colors duration-300 ${
               scrolled
                 ? "text-black dark:text-white"
-                : "text-black dark:text-white"
+                : "text-black dark:text-black"
             }`}
           >
             E-Commerce
@@ -74,7 +74,7 @@ export default function NavBar() {
             ${
               scrolled
                 ? "bg-transparent dark:bg-transparent text-black dark:text-white"
-                : "bg-transparent text-black dark:text-white"
+                : "bg-transparent text-black dark:text-black"
             }
             md:flex-row md:space-x-8 md:mt-0 md:border-0 text-black`}
           >
