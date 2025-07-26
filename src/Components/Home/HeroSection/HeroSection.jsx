@@ -12,20 +12,8 @@ export default function HeroSection() {
   }, [darkMode]);
   return (
     <>
-      <div className="">
-        {" "}
-        <button
-          className="absolute top-[95%] right-[1%] z-40 p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
-          onClick={() => setDarkMode(!darkMode)}
-        >
-          {darkMode ? (
-            <FaRegMoon className="text-yellow-500" />
-          ) : (
-            <CiSun className="text-gray-500" />
-          )}
-        </button>
-      </div>
-      <div className="bg-hero-pattern  min-h-[90vh] relative bg-cover  flex items-center justify-start ">
+  
+      <div className="bg-hero-pattern  min-h-[100vh] relative bg-cover  flex items-center justify-start ">
         <div className="absolute  inset-0 z-0 bg-black bg-opacity-[60%] dark:bg-white dark:bg-opacity-[9%]">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 gap-4">
@@ -38,7 +26,7 @@ export default function HeroSection() {
                     Shop the latest products with unbeatable prices & fast
                     delivery across the country!
                   </p>
-                  <button className="px-6 py-3 rounded-md bg-[#FE5013] dark:hover:bg-white dark:hover:text-black hover:bg-black text-white transition duration-300">
+                  <button className="px-6 py-3 rounded-md bg-main dark:hover:bg-white dark:hover:text-black hover:bg-black text-white transition duration-300">
                     Shop Now
                   </button>
                 </div>

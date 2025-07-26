@@ -8,6 +8,9 @@ export default {
       "secondary":["Fira Code", "monospace"],
     },
     extend: {
+      colors: {
+        "main": "#FE5013",
+      },
       backgroundImage:{
         "hero-pattern": "url('./src/assets/images/hero.jpg')"
       }
