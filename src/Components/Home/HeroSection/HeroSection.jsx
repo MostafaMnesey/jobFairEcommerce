@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <>
   
-      <div className="bg-hero-pattern  min-h-[100vh] relative bg-cover  flex items-center justify-start ">
+      <div className="bg-hero-pattern  min-h-[100vh] relative bg-fixed bg-cover bg-center  flex items-center justify-start ">
         <div className="absolute  inset-0 z-0 bg-black bg-opacity-[60%] dark:bg-white dark:bg-opacity-[9%]">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 gap-4">
@@ -31,7 +31,7 @@ export default function HeroSection() {
                   </button>
                 </div>
               </div>
-              <div className="min-h-[90vh] flex items-center justify-center p-8">
+             {/*  <div className="min-h-[90vh] flex items-center justify-center p-8">
                 <div>
                   <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
@@ -51,7 +51,7 @@ export default function HeroSection() {
                     <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
