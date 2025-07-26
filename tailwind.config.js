@@ -12,7 +12,7 @@ export default {
         "main": "#FE5013",
       },
       backgroundImage:{
-        "hero-pattern": "url('./src/assets/images/hero.jpg')"
+        "hero-pattern": "url('./src/assets/images/hero.png')"
       }
     },
   },
