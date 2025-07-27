@@ -27,8 +27,8 @@ export default function ProductCard({ product }) {
           far, in reverse chronological order.
         </p>
         <Link
-          href="#"
-          className="inline-flex absolute z-10 -top-[200%] group-hover/btn:top-[2%] mt-2 transition-all right-[1%] items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-main/80 focus:ring-4 focus:outline-none focus:ring-bg-main dark:bg-bg-main dark:hover:bg-bg-main/80 dark:focus:ring-bg-main"
+          to={`/products/${product?.id}`}
+          className="inline-flex absolute z-10 -top-[200%] group-hover/btn:top-[2%] mt-2 transition-all right-[1%] items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-full hover:bg-main/80 focus:ring-4-main focus:outline-none focus:ring-bg-main dark:bg-bg-main dark:hover:bg-bg-main/80 dark:focus:ring-bg-main"
         >
           Show Details
         </Link> 

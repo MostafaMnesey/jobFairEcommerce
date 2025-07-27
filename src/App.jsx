@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { CiSun } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa6";
 import ProductDetails from "./Components/ProductDetails/ProductDetails";
+import NotFound from "./Components/NotFound/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "products/:id",
         element: <ProductDetails />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

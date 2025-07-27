@@ -151,7 +151,7 @@ export default function ProductDetails() {
             </div>
 
             {/* Product Info */}
-            <div className="flex flex-col justify-center px-4 md:px-8">
+            <div className="flex flex-col justify-center gap-4 px-4 md:px-8">
               <h2 className="text-3xl md:text-5xl font-extrabold text-main mb-6 leading-tight">
                 {data?.data?.title}
               </h2>
@@ -186,7 +186,7 @@ export default function ProductDetails() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="w-full sm:w-1/2 bg-main hover:bg-black text-white font-semibold py-3 rounded-xl shadow-md transition-all duration-300">
+                <button className="w-full sm:w-1/2 bg-main hover:bg-black dark:hover:bg-white dark:hover:text-black text-white font-semibold py-3 rounded-xl shadow-md transition-all duration-300">
                   Add to Cart
                 </button>
 

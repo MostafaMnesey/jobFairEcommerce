@@ -43,7 +43,7 @@ export default function SearchBar({ searchQuery, setSearchQuery, setSort }) {
                 id="dropdown"
                 className={`z-10 absolute mt-2 ${
                   isOpen ? "block" : "hidden"
-                } bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}
+                } bg-white divide-y divide-gray-100 rounded-lg shadow w-44 max-h-60 overflow-y-auto right-0 dark:bg-gray-700`}
               >
                 <ul
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -51,25 +51,21 @@ export default function SearchBar({ searchQuery, setSearchQuery, setSort }) {
                 >
                   <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     <button onClick={() => setSort("price-low")}>
-                      {" "}
                       Price: Low to High
                     </button>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     <button onClick={() => setSort("price-high")}>
-                      {" "}
                       Price: High to Low
                     </button>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     <button onClick={() => setSort("name-az")}>
-                      {" "}
                       Name: A to Z
                     </button>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                     <button onClick={() => setSort("name-za")}>
-                      {" "}
                       Name: Z to A
                     </button>
                   </li>
