@@ -8,7 +8,7 @@ export default function Products({ data }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [sort, setSort] = useState("");
   const loc = useLocation();
-  const filteredProducts = data.filter((product) =>
+  const filteredProducts = data?.filter((product) =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
   const sortedProducts = [...filteredProducts].sort((a, b) => {
@@ -43,11 +43,11 @@ export default function Products({ data }) {
         {loc.pathname === "/products" && (
           <SearchBar setSearchQuery={setSearchQuery} setSort={setSort} />
         )}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {sortedProducts && sortedProducts.length > 0 ? (
+        <div className="grid  BG-[]grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {sortedProducts && sortedProducts?.length > 0 ? (
             sortedProducts.map((product) => (
               <div
-                key={product.id}
+                key={product?.id}
                 className=" bg-transparent rounded-lg  p-4 flex flex-col items-center hover:shadow-lg hover:shadow-black/50 border border-b-black dark:border-black transition-shadow dark:hover:shadow-main duration-300"
               >
                 <Card product={product} />
