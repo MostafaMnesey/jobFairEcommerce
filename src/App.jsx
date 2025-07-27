@@ -7,6 +7,7 @@ import AllProducts from "./Components/AllProducts/AllProducts";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { CiSun } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa6";
+import ProductDetails from "./Components/ProductDetails/ProductDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "products",
         element: <AllProducts />,
+      },
+      {
+        path: "products/:id",
+        element: <ProductDetails />,
       },
     ],
   },
@@ -36,8 +41,7 @@ function App() {
     document.documentElement.classList.toggle("dark", darkMode);
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
-  // ✅ إضافة زر لتغيير الوضع   
-  
+  // ✅ إضافة زر لتغيير الوضع
 
   return (
     <>
@@ -58,6 +62,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

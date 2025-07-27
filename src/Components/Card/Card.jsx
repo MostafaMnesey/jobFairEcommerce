@@ -8,18 +8,18 @@ export default function ProductCard({ product }) {
         <div className="relative">
           <img
             className="rounded-t-lg r h-52 flex justify-center items-center w-full"
-            src={product.image}
+            src={product?.image}
             alt="product image"
           />
           <span className="bg-main absolute top-[100%] left-[50%] -translate-x-1/2 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-main dark:text-white">
-            {product.category}
+            {product?.category}
           </span>
         </div>
       </a>
       <div className="p-5  ">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {product.title}
+            {product?.title}
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -35,13 +35,13 @@ export default function ProductCard({ product }) {
         <div className="flex items-center mt-4">
           <FaStar className="text-yellow-500">
             <span className="ml-2 text-sm font-medium text-gray-900 dark:text-white">
-              {product.rating.rate} ({product.rating.count} reviews)
+              {product?.rating.rate} ({product?.rating.count} reviews)
             </span>
           </FaStar>
         </div>
         <div classname>
           <span className="text-2xl my-2 font-bold text-gray-900 dark:text-white">
-            ${product.price}
+            ${product?.price}
           </span>
         </div>
       </div>
